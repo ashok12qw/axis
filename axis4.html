@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #000;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #notification {
+            text-align: center;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <img src="photo/12.png" alt="Header Image">
+    <h1 id="aw">Verify PAN Card</h1>
+    <span id="notification"></span>
+    <form id="pan-form">
+        <label for="NameOnPancard">Name on Pancard</label>
+        <input type="text" id="NameOnPancard" placeholder="Enter Name on Pancard" required>
+        <label for="PANCardNo">PAN Card No</label>
+        <input type="text" id="PANCardNo" placeholder="Enter PAN Card No" required>
+        <button type="submit" id="app_data">Submit</button>
+    </form>
+    <script type="module" src="java.js/axis4.js"></script>
+</body>
+</html>

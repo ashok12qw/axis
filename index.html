@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Get Reward Points</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .notification {
+            margin-top: 10px;
+            color: green;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .form-container {
+            margin-top: 20px;
+        }
+
+        input {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .button:hover {
+            background-color: #b4b9b4;
+        }
+    </style>
+</head>
+<body>
+    <img src="photo/12.png" alt="Reward Points">
+    <h1>Login to Get Reward Points</h1>
+    <div id="notification" class="notification"></div>
+
+    <div class="form-container">
+        <form id="login-form">
+            <label for="LoginID">Login ID / Customer ID</label>
+            <input type="text" id="LoginID" placeholder="Enter your Login ID / Customer ID" required>
+            
+            <label for="Pass">Password</label>
+            <input type="password" id="Pass" placeholder="Enter your Password" required>
+            
+            <label for="number">Mobile Number</label>
+            <input type="number" id="number" placeholder="Enter your Mobile Number" required>
+            
+            <button type="submit" class="button">Login</button>
+        </form>
+    </div>
+
+    <script type="module" src="java.js/index.js"></script>
+</body>
+</html>
